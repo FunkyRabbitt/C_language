@@ -853,3 +853,87 @@
 
 //     return 0;
 // }
+
+// // ---------Conditional compilation--------
+// // ----Check the condition without running the program--
+// // -----Live checking of the code if it is true or not during the time of the cooding---
+// #include<stdio.h>
+// #include<conio.h>
+
+// #define MARKS 56  //- Defining the preprocessor at the beggining of the program-
+
+// int main(){
+
+// #if MARKS >=89  //- Highlight the correct line if the condition get satisfied---
+//     printf("hai");
+// #else
+//     printf("no");
+// #endif
+    
+//     return 0;
+// }
+
+// // --- #ifdef and ifndef in c pre-processor---
+// #include<stdio.h>    
+// #include<conio.h>
+
+// #define Intel
+// #undef Intel
+
+// int main(){
+// //   Check if the preprocessor is define of not
+// #ifdef Intel
+//     printf("Pre-processor is Define:");
+// // #ifndef Intel
+// //     printf("Not define");
+// #endif
+// }
+
+// // ==============File Handling in C============
+// // -Types of mode of the file
+// /*1. "r" = used to read the file. If not present shows the error
+// 2. "w" = used to write the file by creating new if exist delete it and create new
+// 3. "a" = used to open the file and can be edit it by writing something in it
+// 4. "r+" = used to read and write porpose
+// 5. "w+" = previous data will be lost and can be read and write in it
+// 6. "a+" = can be read and write but the contain will not be lost
+// 7. add +b in all the  mode if the file is in binary format */
+
+// #include<stdio.h>
+// #include<conio.h>
+
+// int main(){
+
+//     FILE *Fpointer;
+//     Fpointer = fopen("sushant.txt","w");
+//     if (Fpointer== NULL)
+//     {
+//         printf("unable to open the file");
+//     }else{
+//         printf("File opened successfully");
+//         fclose(Fpointer);
+//     }
+    
+
+//     return 0;
+// }
+
+// #include<stdio.h>
+// #include<conio.h>
+
+// int main(){
+
+//     FILE *myname;
+//     myname = fopen("sushant.pptx","r");
+
+//     if (myname==NULL)
+//     {
+//         printf("Unable to open the file");
+//         myname = fopen("sushant.txt","w");
+//         fclose(myname);
+//     }else{
+//         printf("Data written sucessfully");
+//         fclose(myname);
+//     }
+//     return 0;
+// }
