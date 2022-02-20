@@ -904,14 +904,14 @@
 
 // int main(){
 
-//     FILE *Fpointer;
-//     Fpointer = fopen("sushant.txt","w");
-//     if (Fpointer== NULL)
+//     FILE *Fpointer;  //creating the file system in the counter
+//     Fpointer = fopen("sushant.txt","w");  // creating and open it in write mode and open it to do some task in it
+//     if (Fpointer== NULL)  //check if the file is exist or created or not
 //     {
-//         printf("unable to open the file");
+//         printf("unable to open the file"); // file not found message will seen if there is no file
 //     }else{
-//         printf("File opened successfully");
-//         fclose(Fpointer);
+//         printf("File opened successfully");  // open sucessfully message is seen in the console
+//         fclose(Fpointer);  // closing the file after opening it *it is very necessary to close the program
 //     }
     
 
@@ -936,4 +936,77 @@
 //         fclose(myname);
 //     }
 //     return 0;
+// }
+
+// //--fputc in c----
+// // --creating and writing into the file----
+
+// #include<stdio.h>
+// #include<conio.h>
+// #include<string.h>
+
+// int main(){
+//     FILE *itsme;
+//     char name[30] = "My name is sushant khadka";
+//     int loop = strlen(name);
+//     int counter;
+
+//     itsme = fopen("sushant.txt","w");
+
+//     if (itsme==NULL)
+//     {
+//         printf("Unable to open the file");
+//     }else{
+//         for (int counter = 0; counter < loop; counter++)
+//         {
+//             fputc(name[counter],itsme);
+//         }
+//         printf("data written successfully");
+//         fclose(itsme);
+//     }
+//     return 0;
+// }
+
+// // --uses of gets function in c language----
+// // --helps to read the input from the user--
+// // --used instead of scanf function because can take input along with space also
+
+// #include<stdio.h>
+// #include<conio.h>
+// #include<string.h>
+
+// int main(){
+//     FILE *my;
+
+//     char name[20];
+//     gets(name);
+
+//     printf("%s",name);
+//     return 0;    
+// }
+
+// // --uses of fputs function in c language----
+// // -- write the user inputed value into the file---
+
+// #include<stdio.h>
+// #include<conio.h>
+// #include<string.h>
+
+// int main(){
+//     FILE *my;
+
+//     char name[100];
+//     my = fopen("sushant.txt","a");
+
+//     if (my == NULL)
+//     {
+//         printf("unable to open the file");
+//     }else{
+//         gets(name);
+//         fputs(name,my);  // -- write the whole input value in the file--
+//         printf("Data written successfully");
+//         fclose(my);
+//     }
+    
+//     return 0;    
 // }
