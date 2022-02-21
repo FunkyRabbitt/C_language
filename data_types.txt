@@ -1,0 +1,34 @@
+---DATA TYPES IN C-----
+Int -->
+Float -->
+Char -->
+Long double -->
+String -->
+Pointer -->
+Struct -->
+Signedness -->
+Array data structure -->
+Floating-point arithmatic -->
+Boolen data type -->
+Double-presing floating pooint -->
+Void type -->
+Wide character -->
+Short Int -->
+Enumerated type -->
+Union type -->
+
+
+----FILE HANDLING FUNCTION TYPES-----
+1. FILE --> helps to create the FILE
+2. *name_of_variable --> creating the variable to open the FILE
+3. fopen() --> helps to open the FILE
+    syntax= fopen("name of FILE","mode of open")
+4. fputc() --> put the character in the FILE
+    syntax = fputc(name[counter],variable)
+    variable = store the value of the file with method of opening
+5. gets() --> helps to store the long value with space also
+    syntax = gets(name)
+6. fputs --> helps to write the whole string at a time in the FILE
+    syntax = fputs(name,variable)
+7. fprints() --> helps to put the value in the file with different data types at the same time
+    syntax =
