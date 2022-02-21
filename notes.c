@@ -1010,3 +1010,30 @@
     
 //     return 0;    
 // }
+
+// #include <stdio.h>
+// #include <conio.h>
+// #include <string.h>
+
+// int main()
+// {
+//     FILE *sushant;
+
+//     char name[40];
+//     int age;
+//     printf("Enter your name and age after one tab: ");
+//     scanf("%s\t%d", name, &age);
+
+//     sushant = fopen("suhsant.txt", "w");
+
+//     if (sushant == NULL)
+//     {
+//         printf("Unable to open the file.");
+//     }
+//     else
+//     {
+//         fprintf(sushant, "Name : %s\nAge : %d", name, age); // writing into the file
+//         fclose(sushant);
+//     }
+//     return 0;
+// }

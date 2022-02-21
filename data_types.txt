@@ -28,7 +28,7 @@ Union type -->
     variable = store the value of the file with method of opening
 5. gets() --> helps to store the long value with space also
     syntax = gets(name)
-6. fputs --> helps to write the whole string at a time in the FILE
+6. fputs --> helps to write the whole string at a time in the FILE and only take the data from gets() function
     syntax = fputs(name,variable)
 7. fprintf() --> helps to put the value in the file with different data types at the same time and write the data in the formatted way
     syntax = fprints(variable,"value",value_variable)
