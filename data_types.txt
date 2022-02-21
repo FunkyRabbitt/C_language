@@ -30,5 +30,8 @@ Union type -->
     syntax = gets(name)
 6. fputs --> helps to write the whole string at a time in the FILE
     syntax = fputs(name,variable)
-7. fprints() --> helps to put the value in the file with different data types at the same time
-    syntax =
+7. fprintf() --> helps to put the value in the file with different data types at the same time and write the data in the formatted way
+    syntax = fprints(variable,"value",value_variable)
+    value = "%s"
+    value_variable =name[] -- this means the variable where the string is stored
+8.
