@@ -1037,3 +1037,32 @@
 //     }
 //     return 0;
 // }
+
+// #include <stdio.h>
+// #include <conio.h>
+// #include <string.h>
+
+// int main()
+// {
+
+//     FILE *sushant;
+
+//     char name; // creating the character to store the character from the file for printing into the console
+
+//     sushant = fopen("sushant.txt", "r");
+
+//     if (sushant == NULL)
+//     {
+//         printf("Unable to open the file.");
+//     }
+//     else
+//     {
+//         while (!feof(sushant))  // checking the character till the end of file name sushant
+//         {
+//             name = fgetc(sushant); // store one one character from the file into the variable name
+//             printf("%c", name);  // printing the vriable which cointail the character value after reading the file.
+//         }
+//         fclose(sushant);
+//     }
+//     return 0;
+// }

@@ -36,4 +36,7 @@ All people seems to need data processing(APSTNDP) --> all layer of network
     syntax = fprints(variable,"value",value_variable)
     value = "%s"
     value_variable =name[] -- this means the variable where the string is stored
-8.
+8. feof --> check the end of the file
+    syntax = feof(variable)
+9. fgetc() --> read the character from the file
+    syntax =fgets(variable)
