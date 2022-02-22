@@ -1066,3 +1066,49 @@
 //     }
 //     return 0;
 // }
+
+// #include<stdio.h>
+// #include<conio.h>
+// #include<string.h>
+
+// int main(){
+
+//     FILE *sushant;
+
+//     char character[30];
+
+//     sushant = fopen("sushant.txt","r");
+
+//     if (sushant == NULL)
+//     {
+//         printf("Unable to open the file");
+//     }else{
+//         fscanf(sushant,"%c",character); // takes the first character from the file
+//         printf(character);
+//         fclose(sushant);
+//     }
+//     return 0;
+// }
+
+// #include<stdio.h>
+// #include<conio.h>
+// #include<string.h>
+
+// int main(){
+
+//     FILE *sushant;
+
+//     char character[30];
+
+//     sushant = fopen("sushant.txt","r");
+
+//     if (sushant == NULL)
+//     {
+//         printf("Unable to open the file");
+//     }else{
+//         fscanf(sushant,"%s",character); // takes the first word from the file
+//         printf(character);
+//         fclose(sushant);
+//     }
+//     return 0;
+// }
