@@ -20,7 +20,8 @@ Union type -->
 OSI --> Open system Interconnection (1976)
 All people seems to need data processing(APSTNDP) --> all layer of network
 
-----FILE HANDLING FUNCTION TYPES-----
+=======FILE HANDLING START========
+
 1. FILE --> helps to create the FILE
 2. *name_of_variable --> creating the variable to open the FILE
 3. fopen() --> helps to open the FILE
@@ -29,17 +30,31 @@ All people seems to need data processing(APSTNDP) --> all layer of network
     syntax = fputc(name[counter],variable)
     variable = store the value of the file with method of opening
 5. gets() --> helps to store the long value with space also
-    syntax = gets(name)
+    syntax = gets(variable)
 6. fputs --> helps to write the whole string at a time in the FILE and only take the data from gets() function
-    syntax = fputs(name,variable)
+    syntax = fputs(variable,file_Pointer)
 7. fprintf() --> helps to put the value in the file with different data types at the same time and write the data in the formatted way
-    syntax = fprints(variable,"value",value_variable)
+    syntax = fprints(file_Pointer,"value",variable)
     value = "%s"
-    value_variable =name[] -- this means the variable where the string is stored
+    variable =name[] -- this means the variable where the string is stored
 8. feof --> check the end of the file
-    syntax = feof(variable)
+    syntax = feof(file_Pointer)
 9. fgetc() --> read the character from the file
-    syntax =fgets(variable)
+    syntax =fgets(file_Pointer)
 10. fscanf() --> read the data from the file only the first open(only read the first word from the file)[word or character]
-    syntax = fscanf(variable,value,variable to store the data)
-11.
+    syntax = fscanf(file_Pointer,value,variable to store the data)
+11. fgets() --> gets the string from the file
+    syntax = fgets(variable_to_store,length,file_Pointer)
+
+========END OF FILE HANDLING==============
+
+======== STRING FUNCTION===================
+
+1. strcpy() --> helps to copy the string one from another
+    syntax = strcpy(target,source)
+    target = kasma copy garne
+    source = ko bata copy garne
+2. strcat() --> used to add the two string(concating the string)
+    syntax = strcat(target,source)
+3. strlen() --> helps to find the length of the word or string
+    strlen(word)
