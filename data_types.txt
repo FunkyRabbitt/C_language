@@ -17,6 +17,8 @@ Short Int -->
 Enumerated type -->
 Union type -->
 
+OSI --> Open system Interconnection (1976)
+All people seems to need data processing(APSTNDP) --> all layer of network
 
 ----FILE HANDLING FUNCTION TYPES-----
 1. FILE --> helps to create the FILE
