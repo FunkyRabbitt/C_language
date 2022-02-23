@@ -1237,3 +1237,68 @@ int main(){
 
     return 0;
 }
+
+// -----structures in c--------------
+// -------helps to store the value and gaining the value with the help of it's key-------
+#include<stdio.h>
+
+int main(){
+
+    struct student  // creating the structure. Its like creating the databse where large data can be stored with same value
+    {
+        char name[20];
+        int age;
+        int class;
+    };
+    
+    struct student sushant = {"Sushant khadka",20,13}; // filling the value into the structure like into the database
+
+    printf("%s",sushant.name);  //gaining the acess to the value stored into the struct student with the help of key value
+
+    return 0;
+}
+
+// ---------storing the default value and adding the value manually into the struct------
+#include<stdio.h>
+
+int main(){
+
+    struct student  
+    {
+        char name[20];
+        int age;
+        int class;
+    };
+    
+    struct student sushant = {"Sushant khadka",20,13}; 
+    struct student Alina = {0}, Ritika = {0}; // store the default value as zero into them
+
+    printf("%s",sushant.name); 
+    printf("%d",Alina.class);
+
+    return 0;
+}
+
+//--------Adding the data into the struct manually with the help of th user----
+#include<stdio.h>
+
+int main(){
+
+    struct student  
+    {
+        char name[20];
+        int age;
+        int class;
+    };
+    
+    struct student sushant = {"Sushant khadka",20,13}; 
+    struct student Alina = {0}, Ritika = {0}; // store the default value as zero into them
+
+    Alina.age = 12; //--Adding the value into the related struct---
+    Ritika.age = 13;
+
+    printf("%d",Alina.age);
+    printf("%d",Ritika.age);
+
+    return 0;
+}
