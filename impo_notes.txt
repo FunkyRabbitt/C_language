@@ -26,27 +26,31 @@ All people seems to need data processing(APSTNDP) --> all layer of network
 2. *name_of_variable --> creating the variable to open the FILE
 3. fopen() --> helps to open the FILE
     syntax= fopen("name of FILE","mode of open")
+
+------------writing into the file----------
 4. fputc() --> put the character in the FILE
     syntax = fputc(name[counter],variable)
 5. fputs --> helps to write the whole string at a time in the FILE and only take the data from gets() function
     syntax = fputs(variable,file_Pointer)
     variable = store the value of the file with method of opening
-6. gets() --> helps to store the long value with space also
-    syntax = gets(variable)
-7. fgets() --> gets the string from the file
-    syntax = fgets(variable_to_store,length,file_Pointer)
-8. fgetc() --> read the character from the file
-    syntax =fgets(file_Pointer)
-9. fprintf() --> helps to put the value in the file with different data types at the same time and write the data in the formatted way
+6. fprintf() --> helps to put the value in the file with different data types at the same time and write the data in the formatted way
     syntax = fprints(file_Pointer,"value",variable)
     value = "%s"
     variable =name[] -- this means the variable where the string is stored
-10. feof --> check the end of the file
-    syntax = feof(file_Pointer)
 
-11. fscanf() --> read the data from the file only the first open(only read the first word from the file)[word or character]
+-------------reading from the file----------
+7. gets() --> helps to store the long value with space also
+    syntax = gets(variable)
+8. fgets() --> gets the string from the file
+    syntax = fgets(variable_to_store,length,file_Pointer)
+9. fgetc() --> read the character from the file
+    syntax =fgets(file_Pointer)
+10. fscanf() --> read the data from the file only the first open(only read the first word from the file)[word or character]
     syntax = fscanf(file_Pointer,value,variable to store the data)
 
+------------checking the last character from the file-------------
+11. feof --> check the end of the file
+    syntax = feof(file_Pointer)
 
 ========END OF FILE HANDLING==============
 
