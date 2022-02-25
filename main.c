@@ -1,26 +1,29 @@
-//--------Adding the data into the struct manually with the help of th user----
+// --Structure pointer and arrow operator---(using the structure pointer into the printf function) or arrow operator-
 #include <stdio.h>
-#include <string.h>
 
 int main()
 {
 
-    struct student
+    struct student //-Defining the struct- like its prototype-
     {
-        char name[20];
-        int age;
-        int class;
+        char Name[30];
+        char faculty[20];
+        int Age;
     };
 
-    struct student sushant = {"Sushant khadka", 20, 13};
-    struct student Alina = {0}, Ritika = {0}; // store the default value as zero into them
+    struct student sushant = {"sushant khadka", "BE-Software", 20};
 
-    Alina.age = 12; //--Adding the value into the related struct---
-    Ritika.age = 13;
+    struct student *my_name;
 
+    my_name = &sushant;
 
-    printf("%d", Alina.age);
-    printf("%d", Ritika.age);
+    // -Both method are right but second one is right to use into the program-
+    (*my_name).Age = 200;
+    my_name->Age = 300; //--structure arrow operator in C language-
+
+    printf("%s", my_name->Name); //--All the method of printing the struct pointer is Right in their own way-
+    printf("%d", (*my_name).Age);
+    printf("%s", (*my_name).faculty);
 
     return 0;
 }

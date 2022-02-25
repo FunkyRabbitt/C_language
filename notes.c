@@ -1335,10 +1335,10 @@ int main()
     };
 
     struct student sushant = {"Sushant khadka", 20, 13};
-    struct student Alina = {0}, Ritika = {0}; // store the default value as zero into them
+    struct student Adolf = {0}, Putin = {0}; // store the default value as zero into them
 
-    printf("%s", sushant.name);
-    printf("%d", Alina.class);
+    printf("%s", sushant.name); //- this dot(.) sign is also known as structure member operator-
+    printf("%d", Adolf.class);
 
     return 0;
 }
@@ -1357,14 +1357,76 @@ int main()
     };
 
     struct student sushant = {"Sushant khadka", 20, 13};
-    struct student Alina = {0}, Ritika = {0}; // store the default value as zero into them
+    struct student Adolf = {0}, putin = {0}; // store the default value as zero into them
 
-    Alina.age = 12; //--Adding the value into the related struct---
-    Ritika.age = 13;
-    strcpy(Alina.name, "Alina"); // Adding the string into the struct--
+    Adolf.age = 12; //--Adding the value into the related struct---
+    putin.age = 13;
+    strcpy(Adolf.name, "Adolf"); // Adding the string into the struct--
 
-    printf("%d", Alina.age);
-    printf("%d", Ritika.age);
+    printf("%d", Adolf.age);
+    printf("%d", putin.age);
+
+    return 0;
+}
+
+// --------Creating the struct in C language-----
+#include <stdio.h>
+#include <conio.h>
+
+int main()
+{
+
+    struct employ
+    {
+        char Name[20];
+        char Education_institution_name[50];
+        char Degree[30];
+        int Age;
+    };
+    struct employ Sushant = //-Adding the data into the struct According to the order-
+        {
+            "sushant khadka",
+            "Nepal College of Information Technology",
+            "Simple_employ",
+            25};
+    printf("+----------------------+\n"); //-Printing the data into the meaningful form-
+    printf("| Name: %s |\n", Sushant.Name);
+    printf("+----------------------+-----------------------------------------+\n");
+    printf("| Education_institution: %s |\n", Sushant.Education_institution_name);
+    printf("+-----------------------+----------------------------------------+\n");
+    printf("| Degree: %s |\n", Sushant.Degree);
+    printf("+-----------------------+\n");
+    printf("| Age: %d               |\n", Sushant.Age);
+    printf("+-----------------------+\n");
+    return 0;
+}
+
+// --Structure pointer and arrow operator---(using the structure pointer into the printf function) or arrow operator-
+#include <stdio.h>
+
+int main()
+{
+
+    struct student //-Defining the struct- like its prototype-
+    {
+        char Name[30];
+        char faculty[20];
+        int Age;
+    };
+
+    struct student sushant = {"sushant khadka", "BE-Software", 20};
+
+    struct student *my_name;
+
+    my_name = &sushant;
+
+    // -Both method are right but second one is right to use into the program-
+    (*my_name).Age = 200;
+    my_name->Age = 300; //--structure arrow operator in C language-
+
+    printf("%s", my_name->Name); //--All the method of printing the struct pointer is Right in their own way-
+    printf("%d", (*my_name).Age);
+    printf("%s", (*my_name).faculty);
 
     return 0;
 }
