@@ -1,29 +1,48 @@
-// --Structure pointer and arrow operator---(using the structure pointer into the printf function) or arrow operator-
+// ---Nested struct in C---------
 #include <stdio.h>
 
 int main()
 {
 
-    struct student //-Defining the struct- like its prototype-
+    struct Intrest //- creating the struct for main-
     {
-        char Name[30];
-        char faculty[20];
-        int Age;
+        char Book[120];
+        char Game[114];
+        char Series[120];
     };
 
-    struct student sushant = {"sushant khadka", "BE-Software", 20};
+    struct Degree //- creating the struct for main-
+    {
+        char College[150];
+        char Youtube_channel[130];
+        char Website[120];
+        char People[120];
+    };
+    struct student //-Creating the main struct-
+    {
+        char Name[130];
+        int Age;
+        struct Intrest In;
+        struct Degree Deg;
+    };
 
-    struct student *my_name;
+    //--- Creating the value for all the struct-
+    struct student sushant = {"Sushant khadka", 20,
+    {"The Monk Who Sold his ferrari", "Football", "Vikings"},
+    {"Nepal College Of Information Technology", "Free code.com", "Github", "Harshit Varshit"}};
 
-    my_name = &sushant;
-
-    // -Both method are right but second one is right to use into the program-
-    (*my_name).Age = 200;
-    my_name->Age = 300; //--structure arrow operator in C language-
-
-    printf("%s", my_name->Name); //--All the method of printing the struct pointer is Right in their own way-
-    printf("%d", (*my_name).Age);
-    printf("%s", (*my_name).faculty);
+    //---Printing or Accessing the value---
+    printf("+-----------------------------------------------------------+\n");
+    printf("| Name : %s\n", sushant.Name);
+    printf("| Age : %d\n", sushant.Age);
+    printf("| Favourite-book : %s\n", sushant.In.Book);
+    printf("| Favourite_game : %s\n", sushant.In.Game);
+    printf("| Favourite_series : %s\n", sushant.In.Series);
+    printf("| College : %s\n", sushant.Deg.College);
+    printf("| Favourite_Youtube_channel : %s\n", sushant.Deg.Youtube_channel);
+    printf("| Website : %s\n", sushant.Deg.Website);
+    printf("| People : %s\n", sushant.Deg.People);
+    printf("+-----------------------------------------------------------+\n");
 
     return 0;
 }
