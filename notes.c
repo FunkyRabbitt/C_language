@@ -1578,3 +1578,47 @@ int main()
     }
     return 0;
 }
+
+// ----Renaming the file in C---
+#include<stdio.h>
+#include<conio.h>
+
+int main(){
+
+    if (rename("ss.txt","sushant.txt") == 0) //--check the condition to rename the file---
+    {
+        printf("File rename sucessfully");
+    }else{
+        printf("There is some problem while renaming the file.");
+    }
+    return 0;
+}
+
+// ---removing the file in C------
+#include<stdio.h>
+#include<conio.h>
+
+int main(){
+
+    int status;
+
+    status = remove("hellow.txt"); //-- removing the file with remove function--
+
+    if (status == 0)
+    {
+        printf("File deleted sucessfully");
+    }else{
+        printf("There was a problem while delating the file.");
+    }
+    
+}
+
+// ---- sizeof in C----
+#include<stdio.h>
+#include<conio.h>
+
+int main(){
+
+    printf("%d",sizeof(int)); // -- calculating the size of data types---
+    return 0;
+}

@@ -53,7 +53,12 @@ All people seems to need data processing(APSTNDP) --> all layer of network
 ------------checking the last character from the file-------------
 11. feof --> check the end of the file
     syntax = feof(file_Pointer)
-
+12. Renaming the filen
+    syntax = rename("old name","new_name");
+    value return = 0
+13. Removing the file
+    syntax = remove("'file_name")
+    value return = 0
 ========END OF FILE HANDLING==============
 
 ======== STRING FUNCTION===================
