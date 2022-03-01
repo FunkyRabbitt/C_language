@@ -1,4 +1,10 @@
 // ----------------Starting the first program in c-----------
+// -------------------------------------------------------
+/*BY : Sushant khadka
+Facebook : sushant khadka
+Insta : sushant.exe_
+Email : itsmesushant05@gmail.com */
+// -------------------------------------------------------
 // ------Program to print the hellow world in c language------
 #include <stdio.h>
 // ---------- main is the starting part of the program ---------
