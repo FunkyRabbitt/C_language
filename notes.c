@@ -1545,3 +1545,36 @@ int main()
 
     return 0;
 }
+
+// ---Writing the user inputed data into the struct using loop------
+#include <stdio.h>
+#include <string.h>
+
+struct student
+{
+    char Name[20];
+    char College[120];
+    char Adress[30];
+    int Age;
+};
+
+int main()
+{
+    int size;
+    printf("Enter the size of Array: ");
+    scanf("%d", &size);
+
+    struct student Total[size];
+
+    for (int i = 0; i < size; i++)
+    {
+        printf("Input Data (Name,College,Adress,Age) for Student : %d\n", i + 1);
+        scanf("%s%s%s%d", Total[i].Name, Total[i].College, Total[i].Adress, &Total[i].Age);
+    }
+    for (int i = 0; i < size; i++)
+    {
+        printf("The Dataa of Student : %d\n", i + 1);
+        printf("Name : %s\nCollege : %s\nAdress : %s\nAge : %d\n\n", Total[i].Name, Total[i].College, Total[i].Adress, Total[i].Age);
+    }
+    return 0;
+}
