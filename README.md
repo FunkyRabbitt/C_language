@@ -1,5 +1,15 @@
-# C_language
-C language for begginer.
+# C_language By: Sushant khadka
+
+ Facebook : Sushant khadka 
+ 
+ Instagram : sushant.exe_
+ 
+ Linkedin : sushant-khadka5
+ 
+ Twitter : sushant-rmp
+ 
+ Tiktok : sushant.deb
+
 Example:
 
 
