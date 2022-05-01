@@ -3,23 +3,23 @@
  Facebook : Sushant khadka 
  
 # DATA TYPES IN C-----
-Int -->
-Float -->
-Char -->
-Long double -->
-String -->
-Pointer -->
-Struct -->
-Signedness -->
-Array data structure -->
-Floating-point arithmatic -->
-Boolen data type -->
-Double-presing floating pooint -->
-Void type -->
-Wide character -->
-Short Int -->
-Enumerated type -->
-Union type -->
+    Int -->
+    Float -->
+    Char -->
+    Long double -->
+    String -->
+    Pointer -->
+    Struct -->
+    Signedness -->
+    Array data structure -->
+    Floating-point arithmatic -->
+    Boolen data type -->
+    Double-presing floating pooint -->
+    Void type -->
+    Wide character -->
+    Short Int -->
+    Enumerated type -->
+    Union type -->
 
 ## OSI --> Open system Interconnection (1976)
 All people seems to need data processing(APSTNDP) --> all layer of network
