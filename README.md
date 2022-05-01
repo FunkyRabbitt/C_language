@@ -22,7 +22,7 @@
     Union type -->
 
 ## OSI --> Open system Interconnection (1976)
-All people seems to need data processing(APSTNDP) --> all layer of network
+    All people seems to need data processing(APSTNDP) --> all layer of network
 
 # FILE HANDLING START
 
