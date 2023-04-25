@@ -34,4 +34,4 @@ void BubbleShort(int N)
     {
         printf("%d ", num[i]);
     }
-} //                              BY: SUHSANT.EXE_
+} 
